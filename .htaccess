@@ -1,0 +1,14 @@
+#Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^mynventory.local[nc]
+#RewriteRule ^(.*)$ http://www.mynventory.local/$1 [r=301,nc]
+
+#Prevent viewing of .htaccess file
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+#Prevent directory listings
+Options All -Indexes

@@ -1,0 +1,259 @@
+@font-face {
+    font-family: mynventory;
+    src: url(./../vendor/fonts/mynventory2.ttf);
+}
+
+html{
+    
+}
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+main {
+    flex: 1 0 auto;
+}
+
+/* HEADER */
+.nav-wrapper{
+    margin-left:50px;
+    margin-right: 50px;
+}
+.brand-logo, .myfont{
+    font-family: mynventory, "Roboto", Helvetica, Arial, sans-serif;
+
+}
+@media(min-width:992px){
+    .brand-logo{
+        margin-left: 40px;
+    }
+}
+.brand-logo > img{
+    margin-right: 20px;
+}
+nav ul > li:not(.brand){
+    margin-left: 2px;
+    text-transform: uppercase;
+}
+nav ul > li > a.user{
+    text-transform: none;
+}
+nav ul > li > a > i{
+    font-size: 1.25em !important;
+}
+.side-nav li{
+  margin-top:2px;
+}
+.side-nav li:hover, .side-nav li.active {
+  background-color: #ddd;
+}
+.side-nav li.brand:hover{
+  background-color: transparent;
+}
+@media (max-width: 400px){
+    nav .button-collapse {
+        margin-left: -40px;
+    }
+}
+
+/* MAIN */
+#central-panel{
+    padding: 20px ;
+    border-radius: 3px;
+}
+#central-panel > h2, #central-panel > h5{
+    margin-bottom: 25px;
+}
+
+
+/* HELPER CLASSES */
+.container-wide{
+    margin: 25px 50px;
+}
+@media(max-width:600px){
+        .container-wide{
+        margin: 25px 20px;
+    }
+}
+.p-big{
+    font-size: 17px;
+    text-align: justify;
+}
+
+/* FORMS COLORS */
+
+/* label color */
+.input-field label {
+
+}
+/* label focus color */
+.input-field input:focus + label {
+    color: #8bc34a !important;
+}
+.input-field textarea:focus + label {
+    color: #8bc34a !important;
+}
+/* label underline focus color */
+.input-field input:focus {
+    border-bottom: 1px solid #8bc34a !important;
+    box-shadow: 0 1px 0 0 #8bc34a !important;
+}
+.input-field textarea:focus {
+    border-bottom: 1px solid #8bc34a !important;
+    box-shadow: 0 1px 0 0 #8bc34a !important;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #8bc34a;
+}
+#login-form button,#register-form button{
+    margin-left: 45px !important;
+}
+
+
+/* INVENTARIOS */
+.fixed-action-btn {
+    padding-top: 15px;
+}
+.fixed-action-btn ul {
+    bottom: 50px;
+}
+
+#inventories{
+    margin-top:30px;
+}
+
+.flip-wrapper{
+    position: absolute;
+    padding-top:10px;
+    width: 42px;
+    height: 60px;
+    overflow: hidden;
+    left: 15px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.flip > div > i{
+    left:0 !important;
+}
+.collection .collection-item.avatar .title{
+    font-size: 20px;
+}
+.collection .collection-item.avatar p{
+    margin-top: 10px;
+}
+.secondary-content{
+    visibility: hidden;
+}
+
+#modal_help ul{
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.aux-html{
+    margin-top:30px;
+}
+
+.fixed-action-btn ul button.btn-floating {
+    opacity: 0;
+}
+
+
+/* FICHAS */
+
+#addFieldWrapper {
+    padding-bottom: 50px;
+}
+
+#files{
+    border:none;
+}
+
+.collection .collection-item.avatar.file {
+    min-height: 84px;
+    height: auto !important;
+    margin-bottom: 20px;
+    border-bottom: none;
+    border-radius: 2px;
+}
+
+.collection .collection-item.avatar.file .flip-wrapper{
+    padding-top:15px;
+}
+
+.field-title{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px ;
+    font-weight: 500;
+    padding-right: 10px;
+    padding-left:10px;
+    padding-top: 5px;
+}
+.field-value{
+    display: inline-block ;
+}
+
+#file-title{
+    margin-bottom:40px;
+}
+
+#return, #editPlantilla, #submit-plantilla{
+    display: inline-block !important;
+}
+
+.aux-html-title{
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+/* FOOTER */
+footer.page-footer {
+    padding-top: 0;
+}
+
+#toast-container span{
+    text-transform: uppercase;
+}
+
+
+
+
+
+/* HELPER CLASSES */
+.margintop30{
+    margin-top: 30px;
+}
+.margintop50{
+    margin-top: 50px;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+@media (max-width:600px){
+    .btn:not(.btn-floating), .btn-large:not(.btn-floating), .btn-flat:not(.btn-floating){
+        padding-left:20px !important;
+        padding-right:20px !important;
+    }
+}
+
+
+
